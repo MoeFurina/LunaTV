@@ -101,7 +101,7 @@ function LoginPageClient() {
         const response = await fetch('/api/bing-wallpaper');
         const data = await response.json();
         if (data.url) {
-          setBingWallpaper(data.url);
+          setBingWallpaper("https://vimg.focalors.ltd/30e5b592dad2bf68c20374f774679b78.png");
         }
       } catch (error) {
         console.log('Failed to fetch Bing wallpaper:', error);
